@@ -1,0 +1,183 @@
+:root {
+  --background: #ffffff;
+  --surface: #f4f6f9;
+  --title: #030f13;
+  --body: #3a4556;
+  --muted: #7b879f;
+  --border: #e3e7ee;
+  --link: #1f6feb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #04080f;
+    --surface: #0d1520;
+    --title: #ffffff;
+    --body: #c4d2de;
+    --muted: #8aaabf;
+    --border: #1c2836;
+    --link: #6aa8ff;
+  }
+}
+
+:root[data-theme="dark"] {
+  --background: #04080f;
+  --surface: #0d1520;
+  --title: #ffffff;
+  --body: #c4d2de;
+  --muted: #8aaabf;
+  --border: #1c2836;
+  --link: #6aa8ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--body);
+  font-family: "Sen", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--title);
+  text-decoration: none;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+header span {
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--title);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 40px 0 12px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 28px 0 8px;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 16px;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: var(--title);
+  font-weight: 700;
+}
+
+a {
+  color: var(--link);
+  overflow-wrap: anywhere;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+.effective {
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+.contact {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links a {
+  display: block;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px 20px;
+  color: var(--title);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding-top: 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--muted);
+  margin-right: 16px;
+}

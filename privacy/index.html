@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy · EveryMap</title>
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Sen:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <a href="../"><img src="../assets/icon.png" alt=""><span>EveryMap</span></a>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective date: October 25, 2026</p>
+
+  <p>This Privacy Policy explains what information EveryMap collects, why we collect it, and what we do with it. We try to keep it short and concrete. If anything is unclear, email us at <a href="mailto:dev@thelightware.com">dev@thelightware.com</a>.</p>
+
+  <h2>Who we are</h2>
+  <p>EveryMap is operated by <strong>Nareby S.A.</strong>, a Uruguayan company (RUT 218708070014) registered at C. Coronel Brandzen 1956, 10th Floor, 11200 Montevideo, Uruguay. For the purposes of EU data protection law, Nareby S.A. is the data controller for personal data processed in connection with EveryMap.</p>
+
+  <h2>What EveryMap does</h2>
+  <p>EveryMap takes a Google link you share with it, such as a place or directions from Google Maps or a result from Google Search, and opens the location in a different map app of your choice.</p>
+
+  <h2>What we collect, and why</h2>
+
+  <h3>On your device</h3>
+  <p>The app stores your preferences (theme, which map apps you've enabled, subscription state) on your device. The first time you launch the app it also generates a random anonymous identifier (UUID) and keeps it in the device's Keychain. The UUID is not tied to your Apple ID, email, name, or any other personal identifier. We use it to make analytics and crash reports consistent across sessions on the same device. The Keychain is not cleared when you delete the app, so the UUID stays the same if you reinstall EveryMap on the same device. It is never copied to other devices.</p>
+  <p>The Keychain also keeps a count of the free conversions you have used and how many the free plan includes (see the next section). Nothing from this on-device storage is transmitted from your device except as described below.</p>
+
+  <h3>In your iCloud account</h3>
+  <p>The free plan includes a limited number of conversions per person, not per device. So that the count carries over when you reinstall the app or use it on another device signed in to the same Apple ID, the app saves two numbers in iCloud key-value storage: how many free conversions you have used and how many the plan includes. The record contains no links, places, or personal data. Apple stores it in your iCloud account under its own privacy policy, and we cannot read it. If iCloud is turned off, the count stays only on your device.</p>
+
+  <h3>Services we use</h3>
+  <p>EveryMap uses a small number of third-party services. We've kept them to a minimum and we name each one here so you can read their own policies if you want to. Like any internet request, each of these services sees your device's IP address when the app connects to it. We don't store IP addresses, and we have configured Mixpanel and Sentry not to record them.</p>
+  <ul>
+    <li><strong>RevenueCat</strong> manages your subscription. RevenueCat receives the device UUID, your entitlement status (Pro or free), the App Store transactions for your subscription, and your locale. RevenueCat is operated by RevenueCat, Inc. (United States). <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+    <li><strong>Mixpanel</strong> provides product analytics. We send Mixpanel anonymized events such as: app launched, a link was decoded, the conversion succeeded or failed, which map apps you have enabled, which plan you're on, and how many free conversions you have used. Events are tied to the device UUID, not to your identity. We do not send Mixpanel the URLs you share or the places you open, and <strong>we have configured the SDK to suppress your IP address</strong> so events are not used for geolocation or stored with an IP. Mixpanel is operated by Mixpanel, Inc. (United States). <a href="https://mixpanel.com/legal/privacy-policy/">mixpanel.com/legal/privacy-policy</a>. If you want us to stop processing analytics about your device, email us (see "Your rights" below).</li>
+    <li><strong>Sentry</strong> provides crash and error reporting. When the app crashes or hits an error, Sentry receives a stack trace, the device model, the iOS version, and the device UUID. We have configured Sentry to <strong>not</strong> capture screenshots, view hierarchies, or any personally identifiable information. <strong>If a link fails to convert, you can choose to send us an error report.</strong> That report, and only that report, also includes the link you shared and a technical log of that single conversion attempt, so we can reproduce the problem and fix it. It is never sent automatically: you have to tap "Report a problem" and confirm. Sentry is operated by Functional Software, Inc. (United States). <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
+    <li><strong>Google Places API</strong> (on Pro, and while you have free conversions left): when a link you share doesn't already contain coordinates, the app asks Google Places for the location's coordinates. The request includes only the place identifier or text query embedded in your link; the place name shown in the app comes from the link itself. Google Places is operated by Google LLC (United States). <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    <li><strong>Google Maps website</strong>: some steps of the conversion talk to Google's own servers rather than to an API. When you share a shortened link (<code>maps.app.goo.gl</code>, <code>share.google</code>), the app requests that link from Google to find out where it points. When a link only names a place, as Google Search results and some directions links do, the app searches Google Maps for that name to find the place. When none of this yields coordinates, the app loads Google Maps in a hidden embedded browser on your device to read the coordinates from the page Google navigates to. That browser stores Google's cookies on your device, in the app's own storage, until you uninstall the app. In each of these steps Google receives the link or the place name and treats the request like a visit to its website, under <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+  </ul>
+  <p>We do <strong>not</strong> operate any server of our own. Nareby never sees the links you share or the places you open; only the third parties listed above receive what's described, directly from your device.</p>
+
+  <h2>What we don't collect</h2>
+  <ul>
+    <li>We don't collect your name, email, phone number, contacts, photos, calendar, or health data.</li>
+    <li>We don't request or track your device location.</li>
+    <li>We don't use the IDFA or any cross-app advertising identifier.</li>
+    <li>We don't run ads.</li>
+    <li>We don't sell or share your data with anyone for advertising or profiling.</li>
+  </ul>
+
+  <h2>Legal bases (GDPR)</h2>
+  <p>If you are in the European Economic Area, the United Kingdom, or Switzerland, our legal bases under Article 6 GDPR are:</p>
+  <ul>
+    <li><strong>Performance of a contract</strong> for resolving the links you share (Google Maps website and Google Places API), for keeping count of your free conversions (Keychain and iCloud key-value storage), and for subscription data processed through RevenueCat.</li>
+    <li><strong>Legitimate interest</strong> for analytics (Mixpanel) and error reporting (Sentry), namely improving the app and fixing crashes. Because we suppress IP collection and only process an anonymous device UUID, the privacy impact is low. You have the right to object to this processing at any time under Article 21 (see "Your rights" below).</li>
+    <li><strong>Consent</strong> (Article 6(1)(a)) for the optional error report described above. It is only sent if you explicitly ask us to, and you can ask us to delete a report you have sent (see "Your rights" below).</li>
+  </ul>
+
+  <h2>How long we keep data</h2>
+  <ul>
+    <li><strong>On your device</strong>: preferences and the embedded browser's Google cookies stay until you uninstall the app or clear its storage. The device UUID and the free-conversion count in the Keychain stay after you uninstall the app, until the device is erased.</li>
+    <li><strong>iCloud</strong> (free-conversion count): kept in your iCloud account by Apple, under Apple's own retention policy.</li>
+    <li><strong>Mixpanel</strong> (analytics events): 2 years from the date of each event, Mixpanel's platform-wide retention period, after which events are deleted automatically.</li>
+    <li><strong>Sentry</strong> (crash reports and the error reports you choose to send): 30 days, after which they are deleted automatically.</li>
+    <li><strong>RevenueCat</strong> (subscription status): for as long as the subscription record for your device exists. We can delete the record on request (see "Your rights").</li>
+    <li><strong>Google</strong> (Places API and Google Maps website): according to Google's own retention policy, linked above.</li>
+    <li>If you ask us to delete your data (see "Your rights"), we request deletion from each of these services rather than waiting for these periods to run out.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>Network requests from the app to the third-party services listed above use TLS. Those processors handle their own data with industry-standard encryption in transit and at rest, per their published policies. We do not operate a server of our own, so there is no backend infrastructure on our side where your data could be stored or compromised. No system is perfectly secure, but we keep our exposure minimal by design.</p>
+
+  <h2>Your rights</h2>
+  <p>You can ask us to access, correct, delete, export, or restrict the data we hold about you, and to <strong>object to processing</strong> for analytics or error reporting. Because we don't hold an account for you and we don't have a backend of our own, the fastest way to exercise these rights is to email us at <a href="mailto:dev@thelightware.com">dev@thelightware.com</a> and include your <strong>device ID</strong>: open the app, go to <strong>Settings → Device ID</strong>, and copy the value. With that ID we can identify the records associated with your device and ask the relevant processor to delete or suppress them. If we cannot reasonably confirm the request is coming from the device the data belongs to, we may ask you for additional information to verify it before acting. We'll respond within 30 days.</p>
+  <p>Uninstalling the app removes your preferences and the embedded browser's cookies immediately. The device ID and the free-conversion count stay in the Keychain, and the count stays in iCloud, because that is how the free plan stays per person.</p>
+  <p>If you are in the EU/EEA you also have the right to lodge a complaint with your local data protection authority.</p>
+  <p>If you are in Uruguay, you have the rights granted by Law No. 18.331 (Personal Data Protection and Habeas Data Act), as complemented by Law No. 19.670 and Decree 64/020, and you may contact the Unidad Reguladora y de Control de Datos Personales (URCDP).</p>
+
+  <h2>Children</h2>
+  <p>EveryMap is not directed to children under 13, and we do not knowingly collect personal data from them. If you believe a child has used the app and provided us data, email us and we'll delete it.</p>
+
+  <h2>International transfers</h2>
+  <p>The third-party services above process data in the United States and the European Union. They each rely on Standard Contractual Clauses or equivalent mechanisms for international data transfers.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy, we'll update the effective date above and describe the change in the App Store release notes of the version that introduces it.</p>
+
+  <h2>Contact</h2>
+  <div class="contact">
+    <p><strong>Nareby S.A.</strong><br>
+    RUT 218708070014<br>
+    C. Coronel Brandzen 1956, 10th Floor<br>
+    11200 Montevideo, Uruguay<br>
+    Email: <a href="mailto:dev@thelightware.com">dev@thelightware.com</a></p>
+  </div>
+
+  <footer>
+    <a href="../terms/">Terms of Use</a>
+    <a href="../support/">Support</a>
+  </footer>
+</main>
+</body>
+</html>
